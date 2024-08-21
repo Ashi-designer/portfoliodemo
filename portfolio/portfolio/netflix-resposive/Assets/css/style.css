@@ -1,0 +1,465 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./PK-en-20240729-POP_SIGNUP_TWO_WEEKS-perspective_WEB_4d951114-b858-42cf-9ed4-fb06ad9ee502_large.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 200px;
+    cursor: pointer;
+}
+
+nav button {
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.header-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header-content h1 {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: bold;
+    max-width: 650px;
+}
+
+.header-content h3 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.email-sign {
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid #959292;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.email-sign input {
+    flex: 1;
+    background: transparent;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+
+}
+
+.email-sign button {
+    background: #db0001;
+    border: 2px solid rgb(76, 73, 73);
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.features {
+    padding: 50px 12%;
+    font-size: 22px;
+    padding-top: 20px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.text-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img {
+    display: block;
+    width: 90%;
+    margin: auto;
+    z-index: 2;
+}
+
+.features h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+video {
+    z-index: -1;
+    overflow: hidden;
+    width: 25%;
+    height: 50%;
+    max-width: 58%;
+    max-height: 65%;
+    position: absolute;
+    top: 131%;
+    left: 69%;
+    transform: translate(-50%, -50%);
+}
+
+.line {
+    width: 100%;
+    height: 0.5rem;
+    bottom: 1.5rem;
+    background-color: rgb(35, 35, 35);
+}
+
+.card-box {
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    left: 0%;
+    bottom: 8%;
+    transform: translateY(-123px);
+    margin: 0 auto;
+    background: rgb(0, 0, 0);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 50%;
+    min-width: 15rem;
+    padding: 0.25rem 0.65rem;
+    border: 2px solid rgba(128, 128, 128, 0.7);
+    box-shadow: 0 0 2em 0 rgb(0, 0, 0);
+    border-radius: 0.75rem;
+}
+
+.card {
+    margin: 0 1rem 0 0;
+}
+
+.card img {
+    height: 5rem;
+}
+
+.text {
+    text-align: left;
+    margin: 0.3rem 0;
+}
+
+.text-1 {
+    font-size: 1rem;
+}
+
+.text-2 {
+    font-size: 0.87rem;
+}
+
+.tag {
+    width: 3rem;
+    height: 3rem;
+    outline: 2px solid rgb(0, 0, 0);
+    outline-offset: -2px;
+    display: block;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center center no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    flex-grow: 0;
+}
+
+.faq {
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h1 {
+    font-weight: 900;
+    font-size: 40px;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.accordion {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750%;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    color: #fff;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s !important;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    color: #fff !important;
+    transition: max-height 0.5s, padding 0.5s !important;
+}
+
+.accordion input[type="radio"]:checked+label+.content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked+label::after {
+    transform: rotate(135deg);
+}
+
+.faq small {
+    font-size: 23px;
+}
+
+.faq .email-sign {
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+
+.footer {
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+
+.footer h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #aca7a7;
+}
+
+.footer .col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a {
+    display: block;
+    text-decoration: none;
+    color: #aca7a7;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer .row {
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.lang-btn {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+    color: #fff;
+}
+
+.lang-btn img {
+    width: 10px;
+    margin-left: 10px;
+}
+
+.footer .lang-btn {
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.copyright-text {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/*-----media queries------*/
+
+@media only screen and (max-width:600px) {
+    .header {
+        width: 100%;
+        height: 100%;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    nav button {
+        padding: 5px 10px;
+    }
+
+    .lang-btn {
+        padding: 4px 8px;
+    }
+
+    .header-content {
+        position: unset;
+        transform: none;
+    }
+
+    .header-content h1 {
+        font-size: 27px;
+        margin-bottom: 1px;
+    }
+
+    .email-sign button {
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+
+    .line {
+        width: 100%;
+    }
+
+    .text-col,
+    .img-col {
+        flex-basis: 100%;
+    }
+
+    video {
+        z-index: -1;
+        overflow: hidden;
+        width: 57%;
+        height: 46%;
+        max-width: 58%;
+        max-height: 65%;
+        position: absolute;
+        top: 162%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+    }
+
+    .card-box {
+        z-index: 1;
+        overflow: hidden;
+        position: relative;
+        left: 0%;
+        bottom: 8%;
+        transform: translateY(-40px);
+        margin: 0 auto;
+        background: rgb(0, 0, 0);
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        width: 50%;
+        min-width: 15rem;
+        padding: 0.25rem 0.65rem;
+        border: 2px solid rgba(128, 128, 128, 0.7);
+        box-shadow: 0 0 2em 0 rgb(0, 0, 0);
+        border-radius: 0.75rem;
+    }
+
+    .img-col img {
+        width: 100%;
+    }
+
+    .features h2 {
+        font-size: 30px;
+    }
+
+    .features p {
+        font-size: 20px;
+    }
+
+    .row:nth-child(2),
+    .row:nth-child(4) {
+        flex-direction: column-reverse;
+    }
+
+    .features .row {
+        padding: 10px 0;
+    }
+
+    .faq h1 {
+        font-size: 15px;
+    }
+
+    .accordion .content {
+        font-size: 14px;
+    }
+
+    .accordion li label {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    label::after {
+        font-size: 22px;
+    }
+
+}
